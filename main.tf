@@ -1,5 +1,7 @@
 
-provider "heroku" {}
+provider "heroku" {
+  version = "~> 2.2"
+}
 
 variable "heroku_common_region" {
   default = "us"
