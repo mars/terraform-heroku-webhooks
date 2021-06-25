@@ -5,6 +5,10 @@ terraform {
       source = "heroku/heroku"
       version = "~> 4.5.1"
     }
+    random = {
+      source = "hashicorp/random"
+      version = "~> 3.1.0"
+    }
   }
 }
 
