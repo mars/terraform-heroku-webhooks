@@ -10,7 +10,7 @@ resource "heroku_app" "reqinspeq" {
 resource "heroku_build" "reqinspeq" {
   app = heroku_app.reqinspeq.name
 
-  source = {
+  source {
     url = "https://github.com/mars/reqinspeq/archive/v1.2.0.tar.gz"
   }
 }
